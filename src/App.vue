@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
+    <footer class="footer themeBackgroundColor">
+      <span class="themeColor">{{ author }}</span>
+      <span>的简历</span>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "app",
+  computed: {
+    author() {
+      // webpack.config.js 配置全局变量
+      return `${AUTHOR}`;
+    },
+  },
+};
+</script>
+<style lang="less">
+#app {
+  width: 100%;
+  height: 100%;
+  text-align: var(--theme-align);
+
+  .footer {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
   }
 }
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
+
+
