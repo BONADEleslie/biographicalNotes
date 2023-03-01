@@ -1,0 +1,13 @@
+:root {
+	--theme-color: #42b883;
+    --theme-background-color: #eee;
+	--theme-align: left;
+}
+
+.themeColor {
+    color: var(--theme-color);
+}
+
+.themeBackgroundColor {
+    background-color: var(--theme-background-color);
+}

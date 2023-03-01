@@ -1,0 +1,300 @@
+/*
+*清除浏览器默认样式，保证各浏览器默认样式一致
+*/
+
+
+/*css reset*/
+
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px !important;
+    color: #666;
+    background-color: #FBFBFB;
+  }
+  
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  fieldset,
+  input,
+  textarea,
+  p,
+  blockquote,
+  th,
+  td,
+  tr,
+  table {
+    margin: 0;
+    padding: 0;
+    -webkie-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  fieldset,
+  img {
+    border: 0;
+  }
+  
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  strong,
+  th,
+  var {
+    /*font-style: normal;
+    font-weight: normal;*/
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  caption,
+  th {
+    text-align: left;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    font-weight: normal;
+  }
+  
+  q:before,
+  q:after {
+    content: ' ';
+  }
+  
+  abbr,
+  acronym {
+    border: 0;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  input:focus {
+    outline: medium
+  }
+  
+  a {
+    text-decoration: none;
+    color: #666;
+  }
+  
+  i {
+    font-style: normal;
+  }
+  
+  input {
+    border: 1px solid #ccc;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  input,
+  select {
+    vertical-align: middle;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  
+  /*
+  *公用样式
+  */
+  
+  .fl {
+    float: left;
+  }
+  
+  .fr {
+    float: right;
+  }
+  
+  
+  /*.clearfix {clear: both;}*/
+  
+  .clearfix {
+    zoom: 1;
+  }
+  
+  .clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+  }
+  
+  .pa {
+    position: absolute;
+  }
+  
+  .pr {
+    position: relative;
+  }
+  
+  .tc {
+    text-align: center;
+  }
+  
+  .tr {
+    text-align: right;
+  }
+  
+  .tl {
+    text-align: left;
+  }
+  
+  .db {
+    display: block;
+  }
+  
+  .dnb {
+    display: inline-block;
+  }
+  
+  .dn {
+    display: none;
+  }
+  
+  .dbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: flex;
+  }
+  
+  .dColumn {
+    flex-direction:column;
+  }
+  
+  .dflex-01 {
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  
+  .dflex-02 {
+    box-flex: 2;
+    -webkit-box-flex: 2;
+    -moz-box-flex: 2;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+  }
+  
+  .dflex-03 {
+    box-flex: 3;
+    -webkit-box-flex: 3;
+    -moz-box-flex: 3;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+  
+  .dflex-04{
+    box-flex: 4;
+    -webkit-box-flex: 4;
+    -moz-box-flex: 4;
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+  }
+  .dflex-05{
+    box-flex: 5;
+    -webkit-box-flex: 5;
+    -moz-box-flex: 5;
+    -webkit-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+  }
+  
+  .border_radius5 {
+    border-radius: 5px;
+  }
+  
+  #app {
+    height: 100%;
+  }
+  
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity .5s;
+  }
+  
+  .fade-enter,
+  .fade-leave-to
+  /* .fade-leave-active below version 2.1.8 */
+  
+  {
+    opacity: 0;
+  }
+  .m10{
+    margin: 10px;
+  }
+  .p10{
+    padding:10px;
+  }
+  .mr10{
+    margin-right: 10px;
+  }
+  .mb10{
+    margin-bottom: 10px;
+  }
+  .mb20{
+    margin-bottom: 20px;
+  }
+  .pb10{
+    padding-bottom: 10px;
+  }
+  .border{
+    border: 1px solid #e8e8e8;
+  }
+  .w100{
+    width: 100%;
+  }
+  
